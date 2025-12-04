@@ -1,4 +1,4 @@
-# O Código é o Design: A Teoria por Trás das Abstrações
+# O Código é o Design
 
 > "O código-fonte é o design do software." – Jack W. Reeves
 
