@@ -1,69 +1,166 @@
-# 🧠 Modelo Mental – Premissas de um Arquiteto de Soluções
+# Modelo Mental
 
-## 🎯 Propósito
+Este repositório reúne modelos mentais para tomada de decisões arquiteturais.
 
-Este repositório reúne um conjunto de **modelos mentais**, **premissas**, **princípios de design** e **boas práticas** que adoto no meu dia a dia como **Arquiteto de Soluções**.
+O objetivo não é manter uma coleção de boas práticas isoladas. A proposta é organizar um modo de raciocinar sobre software: entender o problema, explicitar trade-offs, modelar comportamento, proteger fronteiras, reduzir acoplamento e documentar decisões que permitam evolução contínua.
 
-A ideia é documentar de forma clara e objetiva os conceitos que me ajudam a tomar decisões mais conscientes, evitar armadilhas comuns no desenvolvimento de software e orientar a evolução de sistemas de maneira sustentável.
+## Filosofia
 
----
+Arquitetura não é a arte de desenhar sistemas. É a disciplina de melhorar a qualidade das decisões que constroem e evoluem esses sistemas.
 
-## 💡 O que você vai encontrar aqui?
+Os documentos partem de algumas premissas:
 
-Aqui você encontrará documentos com temas que impactam diretamente o design, a arquitetura e a qualidade de software, como:
+* Arquitetura melhora decisões.
+* Toda decisão possui trade-offs.
+* Complexidade não desaparece; ela muda de lugar.
+* O consumidor adapta; a fonte permanece estável.
+* Comportamento revela conhecimento.
+* Eventos representam fatos, não comandos.
+* Contratos explícitos envelhecem melhor que dependências implícitas.
+* Simplicidade reduz carga cognitiva.
+* Código é design executável.
+* Documentação deve apoiar decisões, não apenas registrar estruturas.
 
-- 📏 Princípios de design de código
-- ❌ Armadilhas comuns (e como evitá-las)
-- 🧠 Modelos de pensamento para tomada de decisão técnica
-- 🔍 Reflexões sobre manutenibilidade, legibilidade e evolução de sistemas
-- 🛠️ Premissas que uso como checkpoints em revisões de código, arquitetura e planejamento de projetos
+## Fluxo de Leitura
 
----
+```text
+Fundamentos
+    ↓
+Heurísticas
+    ↓
+Modelagem
+    ↓
+Integração
+    ↓
+Arquitetura
+    ↓
+Implementação
+    ↓
+Comunicação e Times
+    ↓
+Estudos de Caso
+```
 
-## 📚 Conteúdo Atual
+## Estrutura
 
-| Tema | Descrição |
-|------|-----------|
-| [Abstração Prematura](./abstraction.md) | Por que evitar abstrações antes da hora e quando a duplicação de código é a melhor escolha. |
-| [Lei de Demeter](./lei-de-demeter.md) | Princípio do Mínimo Conhecimento e como reduzir o acoplamento entre objetos. |
-| [Mudança de Mentalidade com BDD](./bdd.md) | Como o BDD promove foco em comportamento, entendimento do problema e colaboração, muito além de testes automatizados. |
+```text
+01-fundamentos/
+02-heuristicas/
+03-modelagem/
+04-integracao/
+05-arquitetura/
+06-implementacao/
+07-comunicacao-e-times/
+08-estudos-de-caso/
+```
 
-> **Obs:** Novos documentos serão adicionados com o tempo, conforme o meu conjunto de modelos mentais evolui.
+## 01. Fundamentos
 
----
+Base conceitual do repositório.
 
-## 👨‍💻 Sobre mim
+* [Arquitetura como Decisão](./01-fundamentos/arquitetura-como-decisao.md)
+* [Complexidade e Trade-offs](./01-fundamentos/complexidade-e-trade-offs.md)
+* [Simplicidade como Sofisticação](./01-fundamentos/simplicidade-como-sofisticacao.md)
+* [Código como Design](./01-fundamentos/codigo-como-design.md)
+* [Abstração Prematura](./01-fundamentos/abstracao-prematura.md)
 
-Atuo como **Arquiteto de Soluções**, com foco em **design de software**, **boas práticas de engenharia** e **evolução de sistemas legados e modernos**. Meu objetivo com este repositório é compartilhar e organizar os aprendizados acumulados ao longo dos anos, criando uma base de referência rápida para futuras decisões.
+## 02. Heurísticas
 
-- 🔗 [Meu LinkedIn](https://www.linkedin.com/in/lucianoyamane/)
+Atalhos mentais para decisões em contexto de incerteza.
 
----
+* [Heurísticas Arquiteturais](./02-heuristicas/heuristicas-arquiteturais.md)
+* [Maus Hábitos Técnicos](./02-heuristicas/maus-habitos-tecnicos.md)
 
-## 🚀 Por que um repositório?
+## 03. Modelagem
 
-Assim como mantemos bibliotecas de código reutilizável, acredito que ter uma **biblioteca de modelos mentais técnicos** ajuda a manter coerência nas decisões, evita erros repetidos e serve como **material de referência para novos membros de equipe**.
+Documentos sobre comportamento, domínio, estados, eventos e tradução de dados externos para modelos internos válidos.
 
----
+* [Comportamento Antes da Estrutura](./03-modelagem/comportamento-antes-da-estrutura.md)
+* [BDD](./03-modelagem/bdd.md)
+* [Máquinas de Estado](./03-modelagem/finite-state-machine.md)
+* [Parse, Don't Validate](./03-modelagem/parse-dont-validate.md)
+* [Entidades Técnicas vs Entidades de Negócio](./03-modelagem/entidades-tecnicas-vs-entidades-de-negocio.md)
 
-## 🌱 Contribuições futuras
+## 04. Integração
 
-Pretendo incluir outros temas como:
+Como contextos se relacionam sem perder autonomia.
 
-- YAGNI (You Ain’t Gonna Need It)
-- Tell, Don’t Ask
-- Clean Architecture
-- Object Calisthenics
-- Design for Change
-- Domain-Driven Design (DDD)
-- Observabilidade (Metrics, Logs, Tracing)
+* [Acoplamento](./04-integracao/acoplamento.md)
+* [Source e Translation](./04-integracao/source-e-translation.md)
+* [Arquitetura Fonte da Verdade](./04-integracao/arquitetura-fonte-da-verdade.md)
+* [Eventos Representam Fatos](./04-integracao/eventos-representam-fatos.md)
+* [Contratos e Versionamento](./04-integracao/contratos-e-versionamento.md)
+* [CDC e Concorrência](./04-integracao/cdc-e-concorrencia.md)
 
----
+## 05. Arquitetura
 
-## 📜 Licença
+Decisões sistêmicas, fronteiras, documentação arquitetural e operação.
 
-Este repositório é público e pode ser usado como inspiração por outros profissionais.
+* [Ortogonalidade](./05-arquitetura/ortogonalidade.md)
+* [Lei de Conway e Fronteiras](./05-arquitetura/lei-de-conway-e-fronteiras.md)
+* [Manifesto Reativo](./05-arquitetura/manifesto-reativo.md)
+* [Observabilidade](./05-arquitetura/observabilidade.md)
+* [ADR](./05-arquitetura/adr.md)
+* [C4 Model](./05-arquitetura/c4-model.md)
 
----
+## 06. Implementação
 
-> **"Decisões conscientes hoje geram sistemas saudáveis amanhã."**
+Como os princípios aparecem no código.
+
+* [Refactoring](./06-implementacao/refactoring.md)
+* [Lei de Demeter](./06-implementacao/lei-de-demeter.md)
+* [Nomear com Intenção](./06-implementacao/nomear-com-intencao.md)
+* [Imperativo vs Declarativo](./06-implementacao/imperativo-vs-declarativo.md)
+
+## 07. Comunicação e Times
+
+Práticas que sustentam decisões coletivas, senioridade técnica e colaboração.
+
+* [Maturidade Técnica e Carreira](./07-comunicacao-e-times/maturidade-tecnica-carreira.md)
+* [Junior vs Senior](./07-comunicacao-e-times/junior-vs-senior.md)
+* [Composição de Times](./07-comunicacao-e-times/composicao-de-times.md)
+* [Programação em Pares](./07-comunicacao-e-times/programacao-em-pares.md)
+* [Prompt Design](./07-comunicacao-e-times/prompt-design.md)
+
+## 08. Estudos de Caso
+
+Aplicações concretas do modelo mental.
+
+* [Estudos de Caso](./08-estudos-de-caso/README.md)
+* [Modelagem de Boleto](./08-estudos-de-caso/exemplo-modelagem-boleto.md)
+* [Integração por Eventos](./08-estudos-de-caso/exemplo-integracao-eventos.md)
+
+## Mapa Conceitual
+
+```text
+Arquitetura como Decisão
+  ├── Complexidade e Trade-offs
+  │   ├── simplicidade
+  │   ├── abstração prematura
+  │   └── carga cognitiva
+  ├── Modelagem
+  │   ├── comportamento
+  │   ├── BDD
+  │   ├── FSM
+  │   └── parse, don't validate
+  ├── Integração
+  │   ├── consumidor adapta
+  │   ├── source e translation
+  │   ├── eventos como fatos
+  │   └── contratos versionados
+  ├── Arquitetura
+  │   ├── acoplamento
+  │   ├── ortogonalidade
+  │   ├── Conway
+  │   ├── observabilidade
+  │   └── ADR / C4
+  └── Implementação
+      ├── código como design
+      ├── refactoring
+      ├── Demeter
+      └── nomeação
+```
+
+## Sobre
+
+Mantido por Luciano Yamane como biblioteca pessoal de raciocínio arquitetural, documentação técnica e evolução de sistemas.

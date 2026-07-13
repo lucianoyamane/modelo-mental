@@ -121,8 +121,4 @@ Essa abordagem:
 - Aumenta a confiança para mudar o sistema,
 - Garante que estamos entregando valor real.
 
-Mais do que uma técnica, o BDD é uma **filosofia de design orientado a comportamento**, e pode ser o diferencial entre um software que simplesmente "funciona" e um que **faz sentido**.
-
----
-
-Se você gostou desse conteúdo, compartilhe com seu time e use esse material como guia para repensar como vocês constroem e testam software. O caminho para um sistema mais saudável começa por **comportamentos bem definidos**.
+Mais do que uma técnica, o BDD é uma **filosofia de design orientado a comportamento**. O caminho para um sistema mais saudável começa por **comportamentos bem definidos**.

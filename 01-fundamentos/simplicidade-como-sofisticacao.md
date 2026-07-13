@@ -13,6 +13,8 @@ Escrever código simples é uma das habilidades mais sofisticadas que um desenvo
 ### 1. O Viés da Complexidade
 Temos uma tendência natural a superestimar soluções elaboradas. Ao antecipar exceções hipotéticas ou tentar cobrir cenários irrelevantes, introduzimos complexidade desnecessária. Isso viola a premissa "não modelar regras por antecipação".
 
+Esse é o paradoxo da simplicidade: o resultado parece óbvio depois de pronto, mas normalmente exige reflexão, refatoração e remoção disciplinada do que não é essencial.
+
 ### 2. Filosofia da Navalha de Ockham
 Entre duas soluções, prefira a mais simples. Isso se reflete também na escrita, arte e design: o valor está no que se remove, não no que se adiciona.
 
@@ -28,6 +30,14 @@ Nem todos os cenários precisam ser cobertos no início. A confiança de que "o 
 - **Facilidade de leitura**: código simples "conta uma história".
 - **Manutenção facilitada**: clareza reduz o custo cognitivo.
 - **Crescimento profissional**: escrever pouco e bem exige domínio técnico.
+
+## Critérios práticos
+
+- Cada linha precisa ter propósito claro.
+- A solução resolve um problema real de agora, não uma hipótese distante.
+- A abstração reduz complexidade em vez de apenas deslocá-la para o leitor.
+- O código certo é preferível ao código menor.
+- A simplicidade deve preservar significado, não esconder regras importantes.
 
 ## Citações complementares
 
@@ -48,7 +58,5 @@ Nem todos os cenários precisam ser cobertos no início. A confiança de que "o 
 - Não modelar regras por antecipação
 - Consumidor adapta, não fonte
 - Modelar o essencial e iterar
-
----
-
-> Desenvolvido com base em práticas e reflexões do repositório [modelo-mental](https://github.com/lucianoyamane/modelo-mental)
+- Complexidade não desaparece; ela muda de lugar
+- Refatorar é tornar entendimento visível
