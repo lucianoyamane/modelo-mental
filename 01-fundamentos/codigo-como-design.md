@@ -86,6 +86,6 @@ Esse modelo mental orienta decisões concretas: ao nomear, ao extrair, ao modula
 
 **Relacionado:**
 
-* [modelo-mental/parse-dont-validate](https://github.com/lucianoyamane/modelo-mental/blob/main/parse-dont-validate.md)
-* [modelo-mental/source-translation.md](https://github.com/lucianoyamane/modelo-mental/blob/main/source-translation.md)
-* [modelo-mental/nomear-com-intencao.md](https://github.com/lucianoyamane/modelo-mental/blob/main/nomear-com-intencao.md)
+* [Parse, Don't Validate](../03-modelagem/parse-dont-validate.md)
+* [Source e Translation](../04-integracao/source-e-translation.md)
+* [Nomear com Intenção](../06-implementacao/nomear-com-intencao.md)

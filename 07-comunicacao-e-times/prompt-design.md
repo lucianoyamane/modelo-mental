@@ -25,6 +25,30 @@ Prompt design é a prática de criar instruções precisas e contextuais para qu
 
 ---
 
+## Detalhamento do TCREI
+
+### T - Tarefa
+
+Declare objetivamente o resultado esperado. Use verbos fortes como analisar, criar, resumir, comparar ou revisar. Quando fizer sentido, indique a persona técnica esperada.
+
+### C - Contexto
+
+Forneça cenário, público, restrições, domínio e finalidade. Contexto rico reduz ambiguidade, mas contexto sem foco dispersa a resposta.
+
+### R - Referência
+
+Inclua exemplos de formato, estilo, estrutura ou critérios. Referências próximas do resultado esperado são mais úteis do que descrições genéricas como "um bom artigo".
+
+### E - Expectativa
+
+Defina formato, tamanho, nível técnico, tom, critérios de aceite e uso final. Sem expectativa clara, a IA tende a preencher lacunas com suposições.
+
+### I - Iteração
+
+Planeje ciclos de refinamento. Peça comparação de alternativas, revisão por critérios e ajustes incrementais quando a tarefa for complexa.
+
+---
+
 ## 🏗️ Estrutura Universal de Prompt
 
 ```xml
