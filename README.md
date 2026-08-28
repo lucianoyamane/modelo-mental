@@ -11,8 +11,10 @@ Arquitetura não é a arte de desenhar sistemas. É a disciplina de melhorar a q
 Os documentos partem de algumas premissas:
 
 * Arquitetura melhora decisões.
+* Boa arquitetura reduz o custo de revisar decisões.
 * Toda decisão possui trade-offs.
 * Complexidade não desaparece; ela muda de lugar.
+* Quando não podemos prever com segurança, devemos projetar para aprender.
 * O consumidor adapta; a fonte permanece estável.
 * Comportamento revela conhecimento.
 * Eventos representam fatos, não comandos.
@@ -59,6 +61,7 @@ Estudos de Caso
 Base conceitual do repositório.
 
 * [Arquitetura como Decisão](./01-fundamentos/arquitetura-como-decisao.md)
+* [Decisão sob Incerteza](./01-fundamentos/decisao-sob-incerteza.md)
 * [Complexidade e Trade-offs](./01-fundamentos/complexidade-e-trade-offs.md)
 * [Simplicidade como Sofisticação](./01-fundamentos/simplicidade-como-sofisticacao.md)
 * [Código como Design](./01-fundamentos/codigo-como-design.md)
@@ -134,6 +137,11 @@ Aplicações concretas do modelo mental.
 
 ```text
 Arquitetura como Decisão
+  ├── Decisão sob Incerteza
+  │   ├── hipótese
+  │   ├── reversibilidade
+  │   ├── feedback
+  │   └── aprendizado
   ├── Complexidade e Trade-offs
   │   ├── simplicidade
   │   ├── abstração prematura

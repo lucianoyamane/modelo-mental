@@ -10,6 +10,28 @@ Observabilidade é parte da decisão arquitetural, não um acessório operaciona
 
 Se uma decisão torna o sistema mais distribuído, assíncrono ou resiliente, ela também deve definir como será observada em produção.
 
+Observabilidade fecha o ciclo de decisão.
+
+Sem sinais confiáveis, não é possível comparar consequências esperadas com consequências reais. A arquitetura passa a acumular opiniões, não aprendizado.
+
+```text
+Hipótese
+    ↓
+Decisão
+    ↓
+Mudança
+    ↓
+Produção
+    ↓
+Observação
+    ↓
+Feedback
+    ↓
+Aprendizado
+    ↓
+Nova decisão
+```
+
 ## Sinais mínimos
 
 * Logs estruturados com correlação.
@@ -24,10 +46,13 @@ Se uma decisão torna o sistema mais distribuído, assíncrono ou resiliente, el
 * Como rastrear uma transação entre contextos?
 * Como medir atraso, duplicidade e reprocessamento?
 * Quais sinais indicam degradação antes de indisponibilidade?
+* Que consequência esperada desta decisão precisa ser observada?
+* Que evidência indicaria que a decisão deve ser revista?
 * O time que opera o sistema entende os sinais produzidos?
 
 ## Relações
 
 * [Manifesto Reativo](./manifesto-reativo.md)
+* [Decisão sob Incerteza](../01-fundamentos/decisao-sob-incerteza.md)
 * [CDC e Concorrência](../04-integracao/cdc-e-concorrencia.md)
 * [Contratos e Versionamento](../04-integracao/contratos-e-versionamento.md)

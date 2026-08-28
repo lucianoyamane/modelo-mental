@@ -20,6 +20,8 @@ A pergunta arquitetural relevante não é como remover toda complexidade, mas on
 * Trade-offs precisam ser discutidos antes da solução parecer óbvia.
 * Simplicidade local pode criar complexidade sistêmica.
 * Complexidade aceitável é aquela que protege uma propriedade mais importante do sistema.
+* Antes de aceitar um trade-off, investigue se ele é inerente ao problema ou consequência do processo atual.
+* Quanto maior a incerteza, mais relevante se torna o custo de reverter a decisão.
 
 ## Perguntas de decisão
 
@@ -27,6 +29,7 @@ A pergunta arquitetural relevante não é como remover toda complexidade, mas on
 * Que complexidade esta decisão cria?
 * Quem passa a assumir essa complexidade?
 * O contexto justifica esse deslocamento?
+* Este trade-off é inevitável ou foi criado por limitações do processo atual?
 * Essa decisão será fácil de reverter se o contexto mudar?
 
 ## Relações
@@ -34,6 +37,7 @@ A pergunta arquitetural relevante não é como remover toda complexidade, mas on
 Este fundamento sustenta:
 
 * [Arquitetura como Decisão](./arquitetura-como-decisao.md)
+* [Decisão sob Incerteza](./decisao-sob-incerteza.md)
 * [Simplicidade como Sofisticação](./simplicidade-como-sofisticacao.md)
 * [Acoplamento](../04-integracao/acoplamento.md)
 * [Heurísticas Arquiteturais](../02-heuristicas/heuristicas-arquiteturais.md)

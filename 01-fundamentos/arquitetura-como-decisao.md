@@ -141,14 +141,32 @@ Uma boa arquitetura aceita que decisões podem ser revisitadas quando o contexto
 
 ---
 
+# Arquitetura reduz o custo de revisar decisões
+
+Boa arquitetura não é apenas tomar decisões melhores.
+
+É criar condições para perceber quando uma decisão deixou de ser adequada, observar suas consequências, aprender com o resultado e corrigir direção com menor custo.
+
+Em ambientes de incerteza, decisões arquiteturais devem considerar não apenas o benefício esperado, mas também o custo de reversão.
+
+Uma pergunta importante passa a ser:
+
+> Quão caro será desfazer esta decisão se estivermos errados?
+
+Quanto maior a incerteza, mais importante se torna reduzir o tamanho da aposta, acelerar feedback e preservar opções de mudança.
+
+---
+
 # Princípios
 
 Este modelo mental parte dos seguintes princípios:
 
 * Arquitetura existe para melhorar a qualidade das decisões.
+* Boa arquitetura reduz o custo de revisar decisões.
 * Não existem soluções universais; existe adequação ao contexto.
 * Toda decisão possui trade-offs.
 * Complexidade não desaparece; ela é redistribuída.
+* Quando não podemos prever com segurança, devemos projetar para aprender.
 * Simplicidade é um mecanismo para reduzir carga cognitiva.
 * O contexto é mais importante do que a tecnologia.
 * Documentação deve apoiar decisões, não apenas registrar estruturas.
@@ -165,6 +183,8 @@ Antes de propor qualquer solução, vale responder:
 * Quem assumirá a complexidade criada por esta decisão?
 * O contexto justifica essa escolha?
 * Quais trade-offs estamos aceitando conscientemente?
+* Como saberemos se esta decisão funcionou?
+* Quanto custará reverter esta decisão se o contexto mudar?
 * Essa decisão torna o sistema mais fácil de compreender e evoluir?
 
 ---

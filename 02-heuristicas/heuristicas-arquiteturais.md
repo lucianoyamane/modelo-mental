@@ -53,7 +53,21 @@
 * Toda decisão possui trade-offs.
 * Decisões explícitas envelhecem melhor do que decisões implícitas.
 * Registre o motivo da decisão, não apenas a decisão.
+* Sem consequência esperada, uma decisão não pode ser avaliada.
 * Quando o contexto muda, reavalie as decisões.
+
+---
+
+# Sobre incerteza e aprendizado
+
+* Quando não podemos prever com segurança, devemos projetar para aprender.
+* Quanto maior a incerteza, menor deveria ser o tamanho da decisão.
+* Sob incerteza, prefira decisões reversíveis.
+* Quanto mais difícil for reverter uma decisão, mais evidência ela exige.
+* Reduza o custo de estar errado.
+* Feedback rápido reduz o custo da incerteza.
+* Observabilidade fecha o ciclo de decisão.
+* Grandes mudanças aumentam o risco e reduzem a capacidade de aprender.
 
 ---
 
@@ -90,6 +104,8 @@
 * Arquitetura é uma atividade contínua.
 * Sistemas evoluem melhor quando as decisões são pequenas e reversíveis.
 * Prefira mudanças incrementais a grandes reescritas.
+* Antes de aceitar um trade-off, investigue se ele é inerente ao problema ou consequência do processo atual.
+* Mude a forma como você muda.
 * A melhor arquitetura é aquela que facilita a próxima mudança.
 
 ---
@@ -113,4 +129,7 @@ Antes de tomar qualquer decisão arquitetural, pergunte:
 * Quem assumirá o custo dessa decisão?
 * O contexto justifica essa escolha?
 * Os trade-offs estão explícitos?
+* Qual hipótese esta decisão assume?
+* Como observaremos suas consequências?
+* Quanto custa estar errado?
 * Esta decisão facilita ou dificulta a evolução futura do sistema?
